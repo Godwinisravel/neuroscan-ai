@@ -14,3 +14,6 @@ def create_app():
     return app
 
 app = create_app()
+@app.route("/")
+def home():
+    return "NeuroScan AI is live 🚀"
