@@ -1,0 +1,8 @@
+flask
+gunicorn
+bcrypt
+mysql-connector-python
+numpy
+pillow
+matplotlib
+python-dotenv
