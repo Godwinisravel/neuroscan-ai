@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, redirect, url_for
 from config import Config
 
 def create_app():
@@ -14,6 +14,7 @@ def create_app():
     return app
 
 app = create_app()
+
 @app.route("/")
 def home():
-    return "NeuroScan AI is live 🚀"
+    return redirect(url_for("auth.login"))
